@@ -4,7 +4,7 @@
 
 #### 1. Dijsktra on undirected graph
 
-![dij_result](.\assets\dij_result.png)
+![dij_result](./assets/dij_result.png)
 
 ## Link Predction
 
