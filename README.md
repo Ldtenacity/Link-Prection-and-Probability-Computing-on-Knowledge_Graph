@@ -8,7 +8,7 @@
 
 #### 2. BFS on undirected graph
 
-![bfs_result](assets\bfs_result.png)
+![bfs_result](./assets/bfs_result.png)
 
 
 
