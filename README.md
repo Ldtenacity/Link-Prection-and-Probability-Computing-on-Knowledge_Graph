@@ -10,7 +10,9 @@
 
 ![bfs_result](./assets/bfs_result.png)
 
+#### 3.BFS bitop on undirected graph
 
+![bfs_bitop_result](./assets/bfs_bitop_result.png)
 
 ## Link Predction
 
