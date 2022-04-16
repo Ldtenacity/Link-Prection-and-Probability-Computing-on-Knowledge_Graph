@@ -11,13 +11,6 @@ dtpp = {}
 with open('links.json', 'r', encoding="utf-8") as file:
     str = file.read()
     data = json.loads(str)
-    '''
-        print(data[0]["p"]["segments"][0]["relationship"]["start"]) # start id: 65
-        print(data[0]["p"]["segments"][0]["relationship"]["end"]) # end id: 0
-        print(data[0]["p"]["segments"][0]["start"]["labels"][0]) # labels: string Place dt: id->labels
-        print(data[0]["p"]["segments"][0]["start"]["properties"]["name"]) # name: string 邢台市第二医院 dt: id->name
-        print(data[0]["p"]["segments"][0]["relationship"]["properties"]["weight"]) # weight: 0.4
-    '''
     for i in range(0, len(data)):
         sid = data[i]["p"]["segments"][0]["relationship"]["start"]
         eid = data[i]["p"]["segments"][0]["relationship"]["end"]
@@ -31,12 +24,9 @@ with open('nodes.json', 'r', encoding="utf-8") as file:
     str = file.read()
     data = json.loads(str)
     for i in range(0, len(data)):
-        # print(data[i]["n"]["identity"])  # identity: int 0 index dt to record all nodes
         nodes[i] = data[i]["n"]["identity"]
         invnodes[data[i]["n"]["identity"]] = i
-        # print(data[i]["n"]["labels"][0])  # labels: string Person dt: id->label
         dtlb[data[i]["n"]["identity"]] = data[i]["n"]["labels"][0]
-        # print(data[i]["n"]["properties"]["name"])  # name: string 程新花 dt: id->name
         dtpp[data[i]["n"]["properties"]["name"]] = data[i]["n"]["properties"]["name"]
 
 

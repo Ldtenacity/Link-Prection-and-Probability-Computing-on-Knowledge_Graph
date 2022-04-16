@@ -14,6 +14,17 @@
 
 ![bfs_bitop_result](./assets/bfs_bitop_result.png)
 
+## Embedding Generation
+
+#### 1. node2vec
+
 ## Link Predction
 
+#### 1. Node2Vec
+
+#### 2. GCN
+
+#### 3. GraphSAGE
+
 # Link-Prection-and-Probability-Computing-on-Knowledge_Graph
+
